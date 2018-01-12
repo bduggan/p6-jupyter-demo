@@ -2,6 +2,8 @@ FROM jupyter/all-spark-notebook:033056e6d164
 
 USER root
 
+# Thu Jan 11 20:35:54 EST 2018
+
 RUN apt-get update \
   && apt-get install -y build-essential \
   && git clone https://github.com/rakudo/rakudo.git -b 2017.12 \
