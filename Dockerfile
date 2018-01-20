@@ -11,7 +11,7 @@ RUN apt-get update \
   && make && make install && cd .. && rm -rf rakudo \
   && git clone https://github.com/ugexe/zef.git && cd zef && perl6 -Ilib bin/zef install . \
   && export PATH=$PATH:/usr/share/perl6/site/bin \
-  && zef -f install https://github.com/bduggan/p6-jupyter-kernel.git@0.0.5 \
+  && zef -v install https://github.com/bduggan/p6-jupyter-kernel.git@0.0.5 \
   && zef -v install SVG::Plot --force-test \
   && jupyter-kernel.p6 --generate-config
 
